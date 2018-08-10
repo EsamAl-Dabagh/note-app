@@ -17,4 +17,8 @@ class Notebook
     @notes[note.title] = note.body
   end
 
+  def view_note(title) 
+    
+  end
+
 end

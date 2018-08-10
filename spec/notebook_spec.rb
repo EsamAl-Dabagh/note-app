@@ -22,6 +22,8 @@ describe Notebook do
     notebook.add_note("The Title", "The Body")
     expect(notebook.view_all_notes).to eq("The Title")
   end
+
+  it { is_expected.to respond_to(:view_note).with(1).argument }
   
 
 end

@@ -2,13 +2,11 @@ require './lib/notebook'
 
 class Note 
 
-  # attr_reader :title, :body
+  attr_accessor :title, :body
 
   def initialize(title, body)
     @title = title
     @body = body
   end
-
-  
 
 end

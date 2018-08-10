@@ -15,7 +15,8 @@ class Notebook
   end
 
   def add_note(title, body)
-    @notes << {title => body}
+    note = Note.new("The Title", "The Body")
+    @notes << {note.title => note.body}
   end
 
 end

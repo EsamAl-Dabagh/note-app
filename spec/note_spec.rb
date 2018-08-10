@@ -1,7 +1,9 @@
 require 'note'
 
 describe Note do 
-  # it "should take two arguments" do
-  #   expect(Note.new("title_1", "body_1")).not_to eql(nil)
-  # end
+
+  # it { is_expected.to respond_to(:new).with(2).argument }
+
+  
+
 end

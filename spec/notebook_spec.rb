@@ -25,5 +25,10 @@ describe Notebook do
 
   it { is_expected.to respond_to(:view_note).with(1).argument }
   
+  it "#view_note should return the title and body of a given note" do
+    notebook = Notebook.new
+    notebook.add_note("The Title", "This is the body, blah blah blah")
+    expect(notebook.view_note("The Title")).to eq("The Title: This is the body, blah blah blah")
+  end
 
 end

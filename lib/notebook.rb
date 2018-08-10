@@ -18,6 +18,8 @@ class Notebook
   end
 
   def view_note(title) 
+
+    return "#{title}: #{@notes.fetch(title)}" if @notes.fetch(title) 
     
   end
 

@@ -2,7 +2,7 @@ require './lib/note'
 
 class Notebook
 
-  attr_accessor :notes
+  attr_reader :notes
 
   def initialize
     @notes = {}
@@ -19,7 +19,7 @@ class Notebook
 
   def view_note(title) 
 
-    return "#{title}: #{@notes.fetch(title)}" if @notes.fetch(title) 
+    @notes.include?(title) ? "#{title}: #{@notes.fetch(title)}" : "Note not found"
     
   end
 

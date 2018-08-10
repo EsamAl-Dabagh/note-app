@@ -2,7 +2,7 @@ require './lib/notebook'
 
 class Note 
 
-  attr_accessor :title, :body
+  attr_reader :title, :body
 
   def initialize(title, body)
     @title = title

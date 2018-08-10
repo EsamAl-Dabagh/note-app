@@ -8,7 +8,7 @@ class Notebook
     @notes = {}
   end
 
-  def view_notes
+  def view_all_notes
     @notes.keys.join
   end
 

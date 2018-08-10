@@ -17,10 +17,10 @@ describe Notebook do
     expect(note.title).to eq("The Title")
   end
 
-  it "should return a list of note titles when #view_notes is called" do 
+  it "should return a list of note titles when #view_all_notes is called" do 
     notebook = Notebook.new
     notebook.add_note("The Title", "The Body")
-    expect(notebook.view_notes).to eq("The Title")
+    expect(notebook.view_all_notes).to eq("The Title")
   end
   
 

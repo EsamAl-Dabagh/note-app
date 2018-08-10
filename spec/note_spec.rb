@@ -2,8 +2,9 @@ require 'note'
 
 describe Note do 
 
-  # it { is_expected.to respond_to(:new).with(2).argument }
-
-  
+  it "#title and #body should not be nil" do
+    note = Note.new("Title", "Body")
+    expect(note.title && note.body).not_to eq(nil)
+  end
 
 end
